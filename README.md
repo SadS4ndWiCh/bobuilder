@@ -19,3 +19,16 @@ You want a house with 2 floors and 3 garages?
 ```
 $ house | floor 2 | garage 3 | build
 ```
+
+```
+   ___
+  /,-,\
+ / |_| \
+/_______\
+|,^, ,^,|  
+||_| |_||
+|       |
+|    ,-,|  
+|    |º||
+'======='
+```
