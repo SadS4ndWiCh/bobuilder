@@ -5,10 +5,14 @@ CC := cc
 CINCLUDES := -I./includes
 
 SRCS = $(wildcard src/*.c)
-OBJS = $(SRCS:.c=.o)
 
-%.o: %.c
-	$(CC) $(CINCLUDES) $< -o $(basename $@)
+all: house floor build
 
-build: $(OBJS)
+house:
+	$(CC) $(CINCLUDES) src/house.c -o house
 
+floor:
+	$(CC) $(CINCLUDES) src/floor.c -o floor
+
+build:
+	$(CC) $(CINCLUDES) src/build.c -o build
