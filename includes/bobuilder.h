@@ -5,6 +5,7 @@
 
 typedef struct {
   unsigned char floors;
+  unsigned char garages;
 } house_t;
 
 #endif

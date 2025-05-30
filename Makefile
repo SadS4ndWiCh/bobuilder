@@ -8,13 +8,16 @@ SRCS = $(wildcard src/*.c)
 
 .PHONY: house floor build
 
-all: house floor build
+all: house floor garage build
 
 house:
 	$(CC) $(CINCLUDES) src/house.c -o house
 
 floor:
 	$(CC) $(CINCLUDES) src/floor.c -o floor
+
+garage:
+	$(CC) $(CINCLUDES) src/garage.c -o garage
 
 build:
 	$(CC) $(CINCLUDES) src/build.c -o build
