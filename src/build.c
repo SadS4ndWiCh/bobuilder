@@ -107,7 +107,6 @@ int main(int argc, char **argv) {
   unsigned int canvas_width = house_roof_model.width + (garage_model.width * house.garages) + 1;
   unsigned int canvas_height = house_roof_model.height + house_door_model.height + (house_window_model.height * house.floors);
 
-  printf("Canvas: %dx%d\n", canvas_width, canvas_height);
   canvas_t canvas = create_canvas(canvas_width, canvas_height);
 
   unsigned int x = 0, y = 0;
