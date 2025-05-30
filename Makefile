@@ -6,7 +6,7 @@ CINCLUDES := -I./includes
 
 SRCS = $(wildcard src/*.c)
 
-.PHONY: house floor build
+.PHONY: house floor garage build
 
 all: house floor garage build
 
